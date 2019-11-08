@@ -9,7 +9,7 @@ driver.get('http://web.whatsapp.com')
 subodhk=input('Press any key after scanning QR ')
 
 while True:
-    passk=int(input("Enter Password: "))
+    passk=(input("Enter Password: "))
     if(passk=='admin'):
         name = input('Name of the user or the group : ')
         msg = input('Enter the msg to spam: ')
