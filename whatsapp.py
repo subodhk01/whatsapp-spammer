@@ -18,13 +18,13 @@ while True:
         user = driver.find_element_by_xpath('//span[@title = "{}"]'.format(name))
         user.click()
         time.sleep(2)
-        element = driver.find_element_by_class_name("_3u328")
+        element = driver.find_element_by_class_name("_1Plpp")
         for i in range(1, count+1):
             try:
                 element.send_keys(msg)
+                time.sleep(0.3)
                 element.send_keys(Keys.ENTER)
                 print(i)
-                time.sleep(0.3)
                 if i % 100 == 0:
                     time.sleep(15)
             except:
@@ -36,4 +36,4 @@ while True:
     else:
         pass
 
-subodhk=input("Have fun, enjoy!! \n Peace - subodhk \n http://github.com/subodhk01/whatsapp-spammer \n")
+subodhk=input("Have fun, enjoy!! \n Peace - subodhk \n http://github.com/subodhk01/whatsapp-spammer \n Press any key to exit")
