@@ -1,5 +1,5 @@
-# whatsapp-spammer
-Python spammer for Whatsapp.
+# Whatsapp Spammer
+
 
 #### Requirements
 * selenium
@@ -10,6 +10,7 @@ Install selenium and pyautogui through pip
 ```sh
 $ pip install selenium
 $ pip install pyautogui
+$ python3 whatsapp.py
 ```
 
 Download chromedriver at
