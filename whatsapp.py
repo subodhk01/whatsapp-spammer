@@ -14,11 +14,12 @@ while True:
         name = input('Name of the user or the group : ')
         msg = input('Enter the msg to spam: ')
         count = int(input('Number of times you want to send the message : '))
+        className = input('Class of input field : ')
         
         user = driver.find_element_by_xpath('//span[@title = "{}"]'.format(name))
         user.click()
         time.sleep(2)
-        element = driver.find_element_by_class_name("_1Plpp")
+        element = driver.find_element_by_class_name(className)
         for i in range(1, count+1):
             try:
                 element.send_keys(msg)
